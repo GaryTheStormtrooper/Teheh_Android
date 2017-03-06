@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item >
+        <shape>
+            <stroke
+                android:width="20dp"
+                android:color="#E97F02"
+                android:dashWidth="120dp"
+                android:dashGap="100dp"/>
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <stroke
+                android:width="20dp"
+                android:color="#F8CA00"
+                android:dashWidth="110dp"
+                android:dashGap="100dp"/>
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <stroke
+                android:width="20dp"
+                android:color="@color/titleBar"
+                android:dashWidth="100dp"
+                android:dashGap="100dp"/>
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <stroke
+                android:width="20dp"
+                android:color="#BD1550"
+                android:dashWidth="40dp"
+                android:dashGap="100dp"/>
+        </shape>
+    </item>
+    <item >
+        <shape>
+            <stroke
+                android:width="20dp"
+                android:color="#490A3D"
+                android:dashWidth="20dp"
+                android:dashGap="100dp"/>
+        </shape>
+    </item>
+    <item android:left="9dp" android:right="9dp">
+        <shape>
+            <gradient
+                android:type="radial"
+                android:centerX="50%"
+                android:centerY="50%"
+                android:startColor="#FFFFFFFF"
+                android:centerColor="#FFFFFFFF"
+                android:endColor="#FFDEDEDE"
+                android:gradientRadius="800"/>
+        </shape>
+    </item>
+</layer-list>

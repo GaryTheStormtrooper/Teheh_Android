@@ -1,0 +1,144 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/gradient"
+        tools:context="com.github.nkzawa.socketio.tehahChat.LoginActivity">
+
+    <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tehah"/>
+
+        <TextView
+            android:id="@+id/username_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/username_prompt_text"
+            android:maxLines="1"/>
+
+        <EditText
+                android:id="@+id/username_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_username"
+                android:gravity="center_horizontal"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPersonName"
+                android:maxLength="18"
+                android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/roomname_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/roomname_prompt_text"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/roomname_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_roomname"
+            android:gravity="center_horizontal"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPersonName"
+            android:maxLength="28"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/location_teller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:hint="@string/location_teller_text"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/make_room_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/action_make_room"
+            android:clickable="false"
+            android:textStyle="bold"/>
+        <!--Button
+                android:id="@+id/sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_sign_in"
+                android:textStyle="bold"/-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray"/>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="10dip">
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/chatroom_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_chatroom"
+            android:maxLength="14"
+            android:maxLines="1"/>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.15">
+        </RelativeLayout>
+        <Button
+            android:id="@+id/roomRefresh_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/refreshButton_text"
+            android:textStyle="bold"/>
+        <ScrollView
+            android:id="@+id/scroll_box"
+            android:layout_height="150dip"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:id="@+id/room_box"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <!--LinearLayout
+                    android:id="@+id/room_box2"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"/-->
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>

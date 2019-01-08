@@ -224,6 +224,7 @@ public class LoginActivity extends Activity implements
         JSONObject joinRoomInfo = new JSONObject();
         try {
             joinRoomInfo.put("roomName", roomName);
+            joinRoomInfo.put("username", mUsername);
         } catch (JSONException e ){}
         Log.d("state", "joinRoom() " + roomName);
         // perform the user login attempt.
@@ -239,6 +240,7 @@ public class LoginActivity extends Activity implements
         }
         // Reset errors.
         mUsernameView.setError(null);
+
 
         // Store values at the time of the login attempt.
         String username = mUsernameView.getText().toString().trim();

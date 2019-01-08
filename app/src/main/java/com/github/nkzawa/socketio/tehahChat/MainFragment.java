@@ -141,9 +141,14 @@ public class MainFragment extends Fragment {
                 if (null == mUsername) return;
                 if (!mSocket.connected()) return;
 
+                JSONObject messageInfo = new JSONObject();
+                try {
+                    messageInfo.put("username", mUsername);
+                } catch (JSONException e ){}
+
                 if (!mTyping) {
                     mTyping = true;
-                    mSocket.emit("typing");
+                    mSocket.emit("typing", mUsername);
                 }
 
                 mTypingHandler.removeCallbacks(onTypingTimeout);
@@ -258,7 +263,14 @@ public class MainFragment extends Fragment {
         addMessage(mUsername, message);
         Log.d("state", "new messsage " + message);
         // perform the sending message attempt.
-        mSocket.emit("new message", message);
+
+        JSONObject messageInfo = new JSONObject();
+        try {
+            messageInfo.put("username", mUsername);
+            messageInfo.put("message", message);
+        } catch (JSONException e ){}
+
+        mSocket.emit("new message", messageInfo);
     }
 
     private void startSignIn() {

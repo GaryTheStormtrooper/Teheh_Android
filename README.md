@@ -1,18 +1,26 @@
-# socket.io-android-chat
+Tehah
+Stay Connected, Stupid Simple
 
-This is a simple chat demo for socket.io and Android. You can connect to [chat.socket.io](http://socket.io/demos/chat/) using this app.
+This is, for now, a Cal Poly Pomona CS580 Advanced Software Engineering student project by Scott Matsumura and Matt Yiyang Yan.
 
-## Installation
+****
 
-1. Clone the project.
-2. In Android Studio, chose **File > Import Project** and select the root folder of the project.
-   Android Studio may ask you to choose the type of project you are importing. If this is the case, make sure to choose **Import project from external model** and select the **Gradle** option.
+So you're at this sweet new scene and you wanna-gotta stay in touch with your new friends.
 
-## Tutorial
+Lit
 
-http://socket.io/blog/native-socket-io-and-android/
+But how are you gonna do that? Exchange 30-40 numbers? Meet at a forum? Sooo Two Thousand-Late!
 
-## License
 
-MIT
+But you're a whiz! You whip out your smartphone and launch your favorite chat app - Tehah.
 
+With Tehah, you just click a button and everyone around you has instant access to your chat room. No sign-up, no hassle. where the price of admission is just being there. Get access to that chat room for as long as you want even when you and your friends split for the day.
+
+
+It's just so easy. So simple. Stupid simple. Tehah.
+
+****
+
+<p align="center"> 
+<img src="tehah.png"  alt="tehah_icon_logo">
+</p>
